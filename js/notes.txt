@@ -1,0 +1,65 @@
+Two different tracks of information, setup of game -- 
+
+	1. Brand new game when page loads, clean slate upon opening site. 
+	2. Upon new game starting, secret number will generate between 1-100 and user must take a guess on what the number could be by entering it in prompt. Should be a named function. This should hapoen with each new game and the page should not be refreshed for this function to work. 
+	3. After entering input, user must get feedback about number entered, returning feedback whether it was too low, too high or just right. Write named function that takes guess and prompts feedback depending on guess. 
+	4. Use absolute values to determine feedback of user's input. Ie (< 50?) numbers away from secret number, they areice  cold, < 30 cold 10-20 they are hot. 1-10 very hot (for example)
+	5. Feedback should appear in the h2#feedback div. 
+	6. Variable to track guesses, feedback should appear in span#count div which should default to 0 when the page loads
+	7. Append guessed numbers to list as a list item in the ul#guesslist
+	8. Valid inputs should only be entered (only 1-100; same rules as fizzbuzz, only integers, decimals)
+	9. Write code to activate the NewGame function, maybe evoke the same function within itself with a clickhandler and start new game
+	10. When player clicks new game button, everything must revert back to clean data with all previous input erased (without refreshing page)
+	
+
+
+
+
+******DO ME FIRST***********
+
+
+//declare numGen and count variables
+
+//newGame function 
+	//Assign numGen a random #  between  1-100
+	//default countGuess to 0 when the page loads
+	//reset all text on DOM (instead of feedback, "make your guess!")
+
+//Newgame clickhandler
+	//Invoke newGame function 
+
+//Invoke newGame function 
+
+
+
+**********DO ME SECOND************
+
+
+
+
+
+
+
+
+//Guess clickhandler
+	//Collect the input information from field
+	//Confirm that input is valid number between 1-100(check fizzbuzz)
+	//Create feedback conditional (if, else if) that depends on number they choose
+		//if # = numberGen
+			//append feedback "You won!"
+		//else if # > 50 away
+			//append feedback "you're freezing cold!"
+		//else if # > 30 away 
+			//append feedback "you're a little cold"
+		//else if # > 10 away
+			//append feedback "you're getting warmer"
+		//else 
+			//append feedback "you're super warm!"	
+	//Increment guess count
+	//Update count on DOM
+	//append each guess number as a list item under ul#guessList (like in shoppingapp)
+
+app2.js
+
+comment everything out with each function 
+
